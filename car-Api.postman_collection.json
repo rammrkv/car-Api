@@ -1,0 +1,436 @@
+{
+	"id": "02603283-f51b-153a-1e34-f29551dfc2ec",
+	"name": "car-Api",
+	"description": "",
+	"order": [
+		"daefc900-5265-63b1-6f13-709d04b0a624",
+		"d7bcd7f8-302a-68ba-0873-15e17e7f6a12",
+		"684cf333-6516-52cb-b1c2-1abac45882a7",
+		"82906ddc-4b98-214f-f094-7b347416fd94",
+		"4e9a4a99-403d-2c52-0e51-a500f9a015c1",
+		"dcfe6a0a-4030-eac3-dd44-167c91220989",
+		"37426a79-91d1-7fe2-8e7c-283576f35067",
+		"268f0298-8bb9-7c0d-d08a-31573911ae1b",
+		"22f419af-0f44-e047-5915-f6fa0001d803",
+		"5145c73c-b0a5-64c2-0d64-e81fa345a45d",
+		"70b4bdf8-0781-5608-ea4c-4e5dd7aae4c2",
+		"8b367f4f-b4e9-903d-9a1a-31892ad9e763"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1627407382893,
+	"owner": "4245790",
+	"public": false,
+	"requests": [
+		{
+			"id": "22f419af-0f44-e047-5915-f6fa0001d803",
+			"headers": "Content-Type: application/json\nAuthorization: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2Nhci1BcGlcL3B1YmxpY1wvYXBpXC9sb2dpbiIsImlhdCI6MTYyNzQxNjQ1MywiZXhwIjoxNjI3NDIwMDUzLCJuYmYiOjE2Mjc0MTY0NTMsImp0aSI6InFOYUdZUlJWaWNIc3g1aHgiLCJzdWIiOjEsInBydiI6Ijc2MDYwZWI2YmZmMThjNjBhMTkyZjg2ZjdjODBhOWZmZDliYzA5NmEifQ.roYS_Lq2QItceESixf-Susxf07B-v80IvcXykbqGnkU\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2Nhci1BcGlcL3B1YmxpY1wvYXBpXC9sb2dpbiIsImlhdCI6MTYyNzQxNjQ1MywiZXhwIjoxNjI3NDIwMDUzLCJuYmYiOjE2Mjc0MTY0NTMsImp0aSI6InFOYUdZUlJWaWNIc3g1aHgiLCJzdWIiOjEsInBydiI6Ijc2MDYwZWI2YmZmMThjNjBhMTkyZjg2ZjdjODBhOWZmZDliYzA5NmEifQ.roYS_Lq2QItceESixf-Susxf07B-v80IvcXykbqGnkU",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/car-Api/public/api/getCarList",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1627419738251,
+			"name": "http://localhost/car-Api/public/api/getCarList",
+			"description": "",
+			"collectionId": "02603283-f51b-153a-1e34-f29551dfc2ec",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "268f0298-8bb9-7c0d-d08a-31573911ae1b",
+			"headers": "Content-Type: application/json\nAuthorization: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2Nhci1BcGlcL3B1YmxpY1wvYXBpXC9sb2dpbiIsImlhdCI6MTYyNzQxNjQ1MywiZXhwIjoxNjI3NDIwMDUzLCJuYmYiOjE2Mjc0MTY0NTMsImp0aSI6InFOYUdZUlJWaWNIc3g1aHgiLCJzdWIiOjEsInBydiI6Ijc2MDYwZWI2YmZmMThjNjBhMTkyZjg2ZjdjODBhOWZmZDliYzA5NmEifQ.roYS_Lq2QItceESixf-Susxf07B-v80IvcXykbqGnkU\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2Nhci1BcGlcL3B1YmxpY1wvYXBpXC9sb2dpbiIsImlhdCI6MTYyNzQxNjQ1MywiZXhwIjoxNjI3NDIwMDUzLCJuYmYiOjE2Mjc0MTY0NTMsImp0aSI6InFOYUdZUlJWaWNIc3g1aHgiLCJzdWIiOjEsInBydiI6Ijc2MDYwZWI2YmZmMThjNjBhMTkyZjg2ZjdjODBhOWZmZDliYzA5NmEifQ.roYS_Lq2QItceESixf-Susxf07B-v80IvcXykbqGnkU",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/car-Api/public/api/deleteCar/1",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "DELETE",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1627419541286,
+			"name": "http://localhost/car-Api/public/api/deleteCar",
+			"description": "",
+			"collectionId": "02603283-f51b-153a-1e34-f29551dfc2ec",
+			"responses": [],
+			"rawModeData": "{\n\t\"car_id\":\"1\",\n\t\"status\":\"A\"\n}"
+		},
+		{
+			"id": "37426a79-91d1-7fe2-8e7c-283576f35067",
+			"headers": "Content-Type: application/json\nAuthorization: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2Nhci1BcGlcL3B1YmxpY1wvYXBpXC9sb2dpbiIsImlhdCI6MTYyNzQxNjQ1MywiZXhwIjoxNjI3NDIwMDUzLCJuYmYiOjE2Mjc0MTY0NTMsImp0aSI6InFOYUdZUlJWaWNIc3g1aHgiLCJzdWIiOjEsInBydiI6Ijc2MDYwZWI2YmZmMThjNjBhMTkyZjg2ZjdjODBhOWZmZDliYzA5NmEifQ.roYS_Lq2QItceESixf-Susxf07B-v80IvcXykbqGnkU\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2Nhci1BcGlcL3B1YmxpY1wvYXBpXC9sb2dpbiIsImlhdCI6MTYyNzQxNjQ1MywiZXhwIjoxNjI3NDIwMDUzLCJuYmYiOjE2Mjc0MTY0NTMsImp0aSI6InFOYUdZUlJWaWNIc3g1aHgiLCJzdWIiOjEsInBydiI6Ijc2MDYwZWI2YmZmMThjNjBhMTkyZjg2ZjdjODBhOWZmZDliYzA5NmEifQ.roYS_Lq2QItceESixf-Susxf07B-v80IvcXykbqGnkU",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/car-Api/public/api/updateCarStatus",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1627419272250,
+			"name": "http://localhost/car-Api/public/api/updateStatus",
+			"description": "",
+			"collectionId": "02603283-f51b-153a-1e34-f29551dfc2ec",
+			"responses": [],
+			"rawModeData": "{\n\t\"car_id\":\"1\",\n\t\"status\":\"A\"\n}"
+		},
+		{
+			"id": "4e9a4a99-403d-2c52-0e51-a500f9a015c1",
+			"headers": "Content-Type: application/json\nAuthorization: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2Nhci1BcGlcL3B1YmxpY1wvYXBpXC9sb2dpbiIsImlhdCI6MTYyNzQ2MzQ0OSwiZXhwIjoxNjI3NDY3MDQ5LCJuYmYiOjE2Mjc0NjM0NDksImp0aSI6ImZnODJScUVIeTdBUUZOcm8iLCJzdWIiOjEsInBydiI6Ijc2MDYwZWI2YmZmMThjNjBhMTkyZjg2ZjdjODBhOWZmZDliYzA5NmEifQ.Gqn-q9Aq2jl6AdpdFf4sLJkOcN4MztIniQl79xjRSa4\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2Nhci1BcGlcL3B1YmxpY1wvYXBpXC9sb2dpbiIsImlhdCI6MTYyNzQ2MzQ0OSwiZXhwIjoxNjI3NDY3MDQ5LCJuYmYiOjE2Mjc0NjM0NDksImp0aSI6ImZnODJScUVIeTdBUUZOcm8iLCJzdWIiOjEsInBydiI6Ijc2MDYwZWI2YmZmMThjNjBhMTkyZjg2ZjdjODBhOWZmZDliYzA5NmEifQ.Gqn-q9Aq2jl6AdpdFf4sLJkOcN4MztIniQl79xjRSa4",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/car-Api/public/api/addCar",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1627463471422,
+			"name": "http://localhost/car-Api/public/api/addCar",
+			"description": "",
+			"collectionId": "02603283-f51b-153a-1e34-f29551dfc2ec",
+			"responses": [],
+			"rawModeData": "{\n\t\"brand\":\"Toyota\",\n\t\"model\":\"Etios\",\n\t\"model_year\":\"2015\",\n\t\"colour\":\"balck\",\n\t\"registration_no\":\"TN57S1144\",\n\t\"mileage_drove\":\"1256\",\n\t\"status\":\"A\",\n\t\"is_published\":\"Y\"\n}"
+		},
+		{
+			"id": "5145c73c-b0a5-64c2-0d64-e81fa345a45d",
+			"headers": "Content-Type: application/json\n//Authorization: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2Nhci1BcGlcL3B1YmxpY1wvYXBpXC9sb2dpbiIsImlhdCI6MTYyNzQxNjQ1MywiZXhwIjoxNjI3NDIwMDUzLCJuYmYiOjE2Mjc0MTY0NTMsImp0aSI6InFOYUdZUlJWaWNIc3g1aHgiLCJzdWIiOjEsInBydiI6Ijc2MDYwZWI2YmZmMThjNjBhMTkyZjg2ZjdjODBhOWZmZDliYzA5NmEifQ.roYS_Lq2QItceESixf-Susxf07B-v80IvcXykbqGnkU\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2Nhci1BcGlcL3B1YmxpY1wvYXBpXC9sb2dpbiIsImlhdCI6MTYyNzQxNjQ1MywiZXhwIjoxNjI3NDIwMDUzLCJuYmYiOjE2Mjc0MTY0NTMsImp0aSI6InFOYUdZUlJWaWNIc3g1aHgiLCJzdWIiOjEsInBydiI6Ijc2MDYwZWI2YmZmMThjNjBhMTkyZjg2ZjdjODBhOWZmZDliYzA5NmEifQ.roYS_Lq2QItceESixf-Susxf07B-v80IvcXykbqGnkU",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "http://localhost/car-Api/public/api/getAvblCarList",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1627452397954,
+			"name": "http://localhost/car-Api/public/api/getAvblCarList",
+			"description": "",
+			"collectionId": "02603283-f51b-153a-1e34-f29551dfc2ec",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "684cf333-6516-52cb-b1c2-1abac45882a7",
+			"headers": "//Content-Type: application/json\nAuthorization: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2Nhci1BcGlcL3B1YmxpY1wvYXBpXC9yZWdpc3RlciIsImlhdCI6MTYyNzQ1Mzg2NiwiZXhwIjoxNjI3NDU3NDY2LCJuYmYiOjE2Mjc0NTM4NjYsImp0aSI6IkFVdU1tV2tQOTVVNWZueFUiLCJzdWIiOjEwLCJwcnYiOiI3NjA2MGViNmJmZjE4YzYwYTE5MmY4NmY3YzgwYTlmZmQ5YmMwOTZhIn0.My4PBCJGD74UR_shANNkH93X2RC8HtgmD4PCCziOl-Q\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2Nhci1BcGlcL3B1YmxpY1wvYXBpXC9yZWdpc3RlciIsImlhdCI6MTYyNzQ1Mzg2NiwiZXhwIjoxNjI3NDU3NDY2LCJuYmYiOjE2Mjc0NTM4NjYsImp0aSI6IkFVdU1tV2tQOTVVNWZueFUiLCJzdWIiOjEwLCJwcnYiOiI3NjA2MGViNmJmZjE4YzYwYTE5MmY4NmY3YzgwYTlmZmQ5YmMwOTZhIn0.My4PBCJGD74UR_shANNkH93X2RC8HtgmD4PCCziOl-Q",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/car-Api/public/api/getUser/5",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1627453906786,
+			"name": "http://localhost/car-Api/public/api/getuser/2",
+			"description": "",
+			"collectionId": "02603283-f51b-153a-1e34-f29551dfc2ec",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "70b4bdf8-0781-5608-ea4c-4e5dd7aae4c2",
+			"headers": "Content-Type: application/json\nAuthorization: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2Nhci1BcGlcL3B1YmxpY1wvYXBpXC9sb2dpbiIsImlhdCI6MTYyNzQyMDA4MSwiZXhwIjoxNjI3NDIzNjgxLCJuYmYiOjE2Mjc0MjAwODEsImp0aSI6IjZFck56S3IwWDZEeER1cWsiLCJzdWIiOjEsInBydiI6Ijc2MDYwZWI2YmZmMThjNjBhMTkyZjg2ZjdjODBhOWZmZDliYzA5NmEifQ.EvMD0MvS0mqSHjDzfaLJzJJe_oI7ekp5zZpHAY4G8ms\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2Nhci1BcGlcL3B1YmxpY1wvYXBpXC9sb2dpbiIsImlhdCI6MTYyNzQyMDA4MSwiZXhwIjoxNjI3NDIzNjgxLCJuYmYiOjE2Mjc0MjAwODEsImp0aSI6IjZFck56S3IwWDZEeER1cWsiLCJzdWIiOjEsInBydiI6Ijc2MDYwZWI2YmZmMThjNjBhMTkyZjg2ZjdjODBhOWZmZDliYzA5NmEifQ.EvMD0MvS0mqSHjDzfaLJzJJe_oI7ekp5zZpHAY4G8ms",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/car-Api/public/api/getCar/2",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1627420225206,
+			"name": "http://localhost/car-Api/public/api/getCar/1",
+			"description": "",
+			"collectionId": "02603283-f51b-153a-1e34-f29551dfc2ec",
+			"responses": [],
+			"rawModeData": "{\n\t\"brand\":\"Honda\",\n\t\"model\":\"city\",\n\t\"colour\":\"silver\",\n\t\"registration_no\":\"TN57S1235\",\n\t\"mileage_drove\":\"1256\",\n\t\"status\":\"A\",\n\t\"is_published\":\"Y\"\n}"
+		},
+		{
+			"id": "82906ddc-4b98-214f-f094-7b347416fd94",
+			"headers": "//Content-Type: application/json\nAuthorization: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2Nhci1BcGlcL3B1YmxpY1wvYXBpXC9sb2dpbiIsImlhdCI6MTYyNzQxNjQ1MywiZXhwIjoxNjI3NDIwMDUzLCJuYmYiOjE2Mjc0MTY0NTMsImp0aSI6InFOYUdZUlJWaWNIc3g1aHgiLCJzdWIiOjEsInBydiI6Ijc2MDYwZWI2YmZmMThjNjBhMTkyZjg2ZjdjODBhOWZmZDliYzA5NmEifQ.roYS_Lq2QItceESixf-Susxf07B-v80IvcXykbqGnkU\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2Nhci1BcGlcL3B1YmxpY1wvYXBpXC9sb2dpbiIsImlhdCI6MTYyNzQxNjQ1MywiZXhwIjoxNjI3NDIwMDUzLCJuYmYiOjE2Mjc0MTY0NTMsImp0aSI6InFOYUdZUlJWaWNIc3g1aHgiLCJzdWIiOjEsInBydiI6Ijc2MDYwZWI2YmZmMThjNjBhMTkyZjg2ZjdjODBhOWZmZDliYzA5NmEifQ.roYS_Lq2QItceESixf-Susxf07B-v80IvcXykbqGnkU",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/car-Api/public/api/getCurrentUser",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1627416685193,
+			"name": "http://localhost/car-Api/public/api/getCurrentUser",
+			"description": "",
+			"collectionId": "02603283-f51b-153a-1e34-f29551dfc2ec",
+			"responses": [],
+			"rawModeData": ""
+		},
+		{
+			"id": "8b367f4f-b4e9-903d-9a1a-31892ad9e763",
+			"headers": "//Content-Type: application/json\nAuthorization: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2Nhci1BcGlcL3B1YmxpY1wvYXBpXC9sb2dpbiIsImlhdCI6MTYyNzQxNjQ1MywiZXhwIjoxNjI3NDIwMDUzLCJuYmYiOjE2Mjc0MTY0NTMsImp0aSI6InFOYUdZUlJWaWNIc3g1aHgiLCJzdWIiOjEsInBydiI6Ijc2MDYwZWI2YmZmMThjNjBhMTkyZjg2ZjdjODBhOWZmZDliYzA5NmEifQ.roYS_Lq2QItceESixf-Susxf07B-v80IvcXykbqGnkU\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Authorization",
+					"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2Nhci1BcGlcL3B1YmxpY1wvYXBpXC9sb2dpbiIsImlhdCI6MTYyNzQxNjQ1MywiZXhwIjoxNjI3NDIwMDUzLCJuYmYiOjE2Mjc0MTY0NTMsImp0aSI6InFOYUdZUlJWaWNIc3g1aHgiLCJzdWIiOjEsInBydiI6Ijc2MDYwZWI2YmZmMThjNjBhMTkyZjg2ZjdjODBhOWZmZDliYzA5NmEifQ.roYS_Lq2QItceESixf-Susxf07B-v80IvcXykbqGnkU",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/car-Api/public/api/getCurrentUser",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "02603283-f51b-153a-1e34-f29551dfc2ec",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost/car-Api/public/api/getuserProfile",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1627464068510,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": ""
+		},
+		{
+			"id": "d7bcd7f8-302a-68ba-0873-15e17e7f6a12",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/car-Api/public/api/login",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1627454308228,
+			"name": "http://localhost/car-Api/public/api/login",
+			"description": "",
+			"collectionId": "02603283-f51b-153a-1e34-f29551dfc2ec",
+			"responses": [],
+			"rawModeData": "{\n\t\"email_id\" : \"rammrkv@gmail.com\",\n\t\"password\" : \"A@1234a\"\n}"
+		},
+		{
+			"id": "daefc900-5265-63b1-6f13-709d04b0a624",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/car-Api/public/api/register",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1627455330716,
+			"name": "http://localhost/car-Api/public/api/register",
+			"description": "",
+			"collectionId": "02603283-f51b-153a-1e34-f29551dfc2ec",
+			"responses": [],
+			"rawModeData": "{\n\t\"fisrt_name\" : \"jhon\",\n\t\"last_name\" : \"mick\",\n\t\"email_id\" : \"rammrkv3@gmail.com\",\n\t\"password\" : \"A@1234a\",\n\t\"password_confirmation\": \"A@1234a\"\n}"
+		},
+		{
+			"id": "dcfe6a0a-4030-eac3-dd44-167c91220989",
+			"headers": "Content-Type: application/json\nAuthorization: bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2Nhci1BcGlcL3B1YmxpY1wvYXBpXC9sb2dpbiIsImlhdCI6MTYyNzQ2MzQ0OSwiZXhwIjoxNjI3NDY3MDQ5LCJuYmYiOjE2Mjc0NjM0NDksImp0aSI6ImZnODJScUVIeTdBUUZOcm8iLCJzdWIiOjEsInBydiI6Ijc2MDYwZWI2YmZmMThjNjBhMTkyZjg2ZjdjODBhOWZmZDliYzA5NmEifQ.Gqn-q9Aq2jl6AdpdFf4sLJkOcN4MztIniQl79xjRSa4\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3RcL2Nhci1BcGlcL3B1YmxpY1wvYXBpXC9sb2dpbiIsImlhdCI6MTYyNzQ2MzQ0OSwiZXhwIjoxNjI3NDY3MDQ5LCJuYmYiOjE2Mjc0NjM0NDksImp0aSI6ImZnODJScUVIeTdBUUZOcm8iLCJzdWIiOjEsInBydiI6Ijc2MDYwZWI2YmZmMThjNjBhMTkyZjg2ZjdjODBhOWZmZDliYzA5NmEifQ.Gqn-q9Aq2jl6AdpdFf4sLJkOcN4MztIniQl79xjRSa4",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost/car-Api/public/api/updateCarInfo",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1627463542644,
+			"name": "http://localhost/car-Api/public/api/updateCarInfo",
+			"description": "",
+			"collectionId": "02603283-f51b-153a-1e34-f29551dfc2ec",
+			"responses": [],
+			"rawModeData": "{\n\t\"car_id\":\"7\",\n\t\"brand\":\"Maruthi\",\n\t\"model\":\"Swift\",\n\t\"model_year\":\"2018\",\n\t\"colour\":\"balck\",\n\t\"registration_no\":\"TN57S1144\",\n\t\"mileage_drove\":\"1256\",\n\t\"status\":\"A\",\n\t\"is_published\":\"Y\"\n}"
+		}
+	]
+}
