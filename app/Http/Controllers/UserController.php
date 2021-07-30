@@ -49,12 +49,12 @@ class UserController extends Controller
             $token = JWTAuth::fromUser($user);
 
             //return successful response
-            return response()->json(['Status' => 'Sucess','User' => $user, 'Msg' => 'User Created', 'token' => $token], 201);
+            return response()->json(['Status' => 'Sucess','User' => $user, 'Msg' => 'User Created', 'token' => $token], 200);
 
         } catch (\Exception $e) {
             //return error message
             //Log::info($e);
-            return response()->json(['Status' => 'Failed','Msg' => 'User Registration Failed!'], 409);
+            return response()->json(['Status' => 'Failed','Msg' => 'User Registration Failed!'], 200);
         }
 
     }
@@ -70,11 +70,11 @@ class UserController extends Controller
 			
             $user = UserDetails::findOrFail($userId);
 
-            return response()->json(['Status' => 'Sucess','User' => $user], 201);
+            return response()->json(['Status' => 'Sucess','User' => $user], 200);
 
         } catch (\Exception $e) {
 
-            return response()->json(['Status' => 'Failed','Msg' => 'User not found!'], 404);
+            return response()->json(['Status' => 'Failed','Msg' => 'User not found!'], 200);
         }
     }
 

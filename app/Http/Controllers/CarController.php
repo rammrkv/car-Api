@@ -39,12 +39,12 @@ class CarController extends Controller
 			$car->save();
 
 			//return successful response
-			return response()->json(['Status' => 'Sucess','CarDetails' => $car, 'Msg' => 'Car Added Sussesfully'], 201);
+			return response()->json(['Status' => 'Sucess','CarDetails' => $car, 'Msg' => 'Car Added Sussesfully'], 200);
 
 		} catch (\Exception $e) {
 			//return error message
 			Log::info($e);
-			return response()->json(['Status' => 'Failed','Msg' => 'Unable To Add The Details!'], 409);
+			return response()->json(['Status' => 'Failed','Msg' => 'Unable To Add The Details!'], 200);
 		}
 
 	}
@@ -56,16 +56,16 @@ class CarController extends Controller
             $car = CarDetails::findOrFail($carId);
             
             if($car->user_id == Auth::user()->user_id){
-				return response()->json(['Status' => 'Sucess','CarDetails' => $car], 201);
+				return response()->json(['Status' => 'Sucess','CarDetails' => $car], 200);
 			}
 			else{
-				return response()->json(['Status' => 'Failed','Msg' => 'Car Info Not Unauthorized !'], 404);
+				return response()->json(['Status' => 'Failed','Msg' => 'Car Info Not Unauthorized !'], 200);
 			}
             
 
         } catch (\Exception $e) {
 
-            return response()->json(['Status' => 'Failed','Msg' => 'Car Info Not Found!'], 404);
+            return response()->json(['Status' => 'Failed','Msg' => 'Car Info Not Found!'], 200);
         }
     }
 	
@@ -101,16 +101,16 @@ class CarController extends Controller
 				$car->save();
 
 				//return successful response
-				return response()->json(['Status' => 'Sucess','Car' => $car, 'Msg' => 'Car Updated Sussesfully'], 201);
+				return response()->json(['Status' => 'Sucess','Car' => $car, 'Msg' => 'Car Updated Sussesfully'], 200);
 			}
 			else{
-				return response()->json(['Status' => 'Failed','Msg' => 'Invalid Car Info!'], 409);
+				return response()->json(['Status' => 'Failed','Msg' => 'Invalid Car Info!'], 200);
 			}
 
         } catch (\Exception $e) {
             //return error message
             //Log::info($e);
-            return response()->json(['Status' => 'Failed','Msg' => 'Unable To Update!'], 409);
+            return response()->json(['Status' => 'Failed','Msg' => 'Unable To Update!'], 200);
         }
     }
     
@@ -132,16 +132,16 @@ class CarController extends Controller
 				$car->save();
 
 				//return successful response
-				return response()->json(['Status' => 'Sucess', 'Msg' => 'Car Updated Sussesfully'], 201);
+				return response()->json(['Status' => 'Sucess', 'Msg' => 'Car Updated Sussesfully'], 200);
 			}
 			else{
-				return response()->json(['Status' => 'Failed','Msg' => 'Invalid Car Info!'], 409);
+				return response()->json(['Status' => 'Failed','Msg' => 'Invalid Car Info!'], 200);
 			}
 
         } catch (\Exception $e) {
             //return error message
             //Log::info($e);
-            return response()->json(['Status' => 'Failed','Msg' => 'Unable To Update!'], 409);
+            return response()->json(['Status' => 'Failed','Msg' => 'Unable To Update!'], 200);
         }
     }
     
@@ -156,16 +156,16 @@ class CarController extends Controller
 				$car->delete();
 
 				//return successful response
-				return response()->json(['Status' => 'Sucess', 'Msg' => 'Car Removed Sussesfully'], 201);
+				return response()->json(['Status' => 'Sucess', 'Msg' => 'Car Removed Sussesfully'], 200);
 			}
 			else{
-				return response()->json(['Status' => 'Failed','Msg' => 'Invalid Car Info!'], 409);
+				return response()->json(['Status' => 'Failed','Msg' => 'Invalid Car Info!'], 200);
 			}
 
         } catch (\Exception $e) {
             //return error message
             //Log::info($e);
-            return response()->json(['Status' => 'Failed','Msg' => 'Unable To Remove!'], 409);
+            return response()->json(['Status' => 'Failed','Msg' => 'Unable To Remove!'], 200);
         }
     }
     
@@ -180,7 +180,7 @@ class CarController extends Controller
         } catch (\Exception $e) {
             //return error message
             //Log::info($e);
-            return response()->json(['Status' => 'Failed','Msg' => 'No Cars Found!'], 409);
+            return response()->json(['Status' => 'Failed','Msg' => 'No Cars Found!'], 200);
         }
     }
     
@@ -195,7 +195,7 @@ class CarController extends Controller
         } catch (\Exception $e) {
             //return error message
             //Log::info($e);
-            return response()->json(['Status' => 'Failed','Msg' => 'Unable To Remove!'], 409);
+            return response()->json(['Status' => 'Failed','Msg' => 'Unable To Remove!'], 200);
         }
     }
 }
