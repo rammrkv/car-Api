@@ -6,21 +6,26 @@ use Illuminate\Http\Request;
 use App\Models\CarDetails;
 use Log;
 use Illuminate\Support\Facades\Auth;
+use Validator;
 
 class CarController extends Controller
 {
 	public function addCar(Request $request)
 	{
-		$this->validate($request, [
-		'brand' => 'required|string',
-		'model' => 'required|string',
-		'model_year' => 'required|string',
-		'colour' => 'required|string',
-		'registration_no' => 'required|string|unique:car_details',
-		'mileage_drove' => 'required|string',
-		'status' => 'required|string',
-		'is_published' => 'required|string',
-		]);
+		$validator = Validator::make($request->all(), [
+            'brand' => 'required|string',
+			'model' => 'required|string',
+			'model_year' => 'required',
+			'colour' => 'required|string',
+			'registration_no' => 'required|string|unique:car_details',
+			'mileage_drove' => 'required',
+			'status' => 'required|string',
+			'is_published' => 'required|string',
+        ]);
+		
+		if ($validator->fails()) {
+           return response()->json(['Status' => 'Failed','Msg' => $validator->messages()->first()], 200);
+        }
 
 		try {
 
@@ -39,7 +44,7 @@ class CarController extends Controller
 			$car->save();
 
 			//return successful response
-			return response()->json(['Status' => 'Sucess','CarDetails' => $car, 'Msg' => 'Car Added Sussesfully'], 200);
+			return response()->json(['Status' => 'Success','CarDetails' => $car, 'Msg' => 'Car Added Sussesfully'], 200);
 
 		} catch (\Exception $e) {
 			//return error message
@@ -71,17 +76,23 @@ class CarController extends Controller
 	
 	public function updateCarInfo(Request $request)
     {
-		$this->validate($request, [
-			'car_id' => 'required',
+		$validator = Validator::make($request->all(), [
+            'car_id' => 'required',
 			'brand' => 'required|string',
 			'model' => 'required|string',
-			'model_year' => 'required|string',
+			'model_year' => 'required',
 			'colour' => 'required|string',
 			'registration_no' => 'required|unique:car_details,registration_no,'.$request->input('car_id').',car_id',
-			'mileage_drove' => 'required|string',
+			'mileage_drove' => 'required',
 			'status' => 'required|string',
 			'is_published' => 'required|string',
-		]);
+        ]);
+        
+        #Log::info(print_r($request->all(),true));
+        
+		if ($validator->fails()) {
+           return response()->json(['Status' => 'Failed','Msg' => $validator->messages()->first()], 200);
+        }
 
         try {
 
@@ -101,7 +112,7 @@ class CarController extends Controller
 				$car->save();
 
 				//return successful response
-				return response()->json(['Status' => 'Sucess','Car' => $car, 'Msg' => 'Car Updated Sussesfully'], 200);
+				return response()->json(['Status' => 'Success','Car' => $car, 'Msg' => 'Car Updated Sussesfully'], 200);
 			}
 			else{
 				return response()->json(['Status' => 'Failed','Msg' => 'Invalid Car Info!'], 200);
@@ -132,7 +143,7 @@ class CarController extends Controller
 				$car->save();
 
 				//return successful response
-				return response()->json(['Status' => 'Sucess', 'Msg' => 'Car Updated Sussesfully'], 200);
+				return response()->json(['Status' => 'Success', 'Msg' => 'Car Updated Sussesfully'], 200);
 			}
 			else{
 				return response()->json(['Status' => 'Failed','Msg' => 'Invalid Car Info!'], 200);
@@ -156,7 +167,7 @@ class CarController extends Controller
 				$car->delete();
 
 				//return successful response
-				return response()->json(['Status' => 'Sucess', 'Msg' => 'Car Removed Sussesfully'], 200);
+				return response()->json(['Status' => 'Success', 'Msg' => 'Car Removed Sussesfully'], 200);
 			}
 			else{
 				return response()->json(['Status' => 'Failed','Msg' => 'Invalid Car Info!'], 200);
@@ -175,7 +186,7 @@ class CarController extends Controller
 
             $car = CarDetails::where('user_id',Auth::user()->user_id)->get();
             
-            return response()->json(['Status' => 'Sucess','Car' => $car], 201);
+            return response()->json(['Status' => 'Success','Car' => $car], 201);
 
         } catch (\Exception $e) {
             //return error message
@@ -190,7 +201,7 @@ class CarController extends Controller
 
             $car = CarDetails::with('user')->where('status','=','A')->where('is_published','=','Y')->orderBy('updated_at','DESC')->get();
             
-            return response()->json(['Status' => 'Sucess','Car' => $car], 201);
+            return response()->json(['Status' => 'Success','Car' => $car], 201);
 
         } catch (\Exception $e) {
             //return error message
