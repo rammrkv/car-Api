@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\UserDetails;
 use Log;
 use Illuminate\Support\Facades\Auth;
-
+use Validator;
 use Tymon\JWTAuth\Facades\JWTAuth;
 use Tymon\JWTAuth\Exceptions\JWTException;
     
@@ -26,14 +26,18 @@ class UserController extends Controller
      */
     public function register(Request $request)
     {
-        //validate incoming request 
-        $this->validate($request, [
+		
+		$validator = Validator::make($request->all(), [
             'fisrt_name' => 'required|string',
             'last_name' => 'required|string',
             'email_id' => 'required|email|unique:user_details',
             'password' => 'required|confirmed',
         ]);
-
+        
+        if ($validator->fails()) {
+           return response()->json(['Status' => 'Failed','Msg' => $validator->messages()->first()], 200);
+        }
+        
         try {
 
             $user = new UserDetails;
@@ -49,11 +53,11 @@ class UserController extends Controller
             $token = JWTAuth::fromUser($user);
 
             //return successful response
-            return response()->json(['Status' => 'Sucess','User' => $user, 'Msg' => 'User Created', 'token' => $token], 200);
+            return response()->json(['Status' => 'Success','User' => $user, 'Msg' => 'User Created', 'token' => $token], 200);
 
         } catch (\Exception $e) {
             //return error message
-            //Log::info($e);
+            Log::info($e);
             return response()->json(['Status' => 'Failed','Msg' => 'User Registration Failed!'], 200);
         }
 
@@ -61,7 +65,7 @@ class UserController extends Controller
     
     public function getCurrentUser()
     {
-        return response()->json(['Status' => 'Sucess','User' => Auth::user()], 200);
+        return response()->json(['Status' => 'Success','User' => Auth::user()], 200);
     }
     
     public function getUser($userId)
@@ -70,7 +74,7 @@ class UserController extends Controller
 			
             $user = UserDetails::findOrFail($userId);
 
-            return response()->json(['Status' => 'Sucess','User' => $user], 200);
+            return response()->json(['Status' => 'Success','User' => $user], 200);
 
         } catch (\Exception $e) {
 
