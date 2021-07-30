@@ -127,10 +127,15 @@ class CarController extends Controller
     
 	public function updateCarStatus(Request $request)
     {
-		$this->validate($request, [
-			'car_id' => 'required',
+		
+		$validator = Validator::make($request->all(), [
+            'car_id' => 'required',
 			'status' => 'required|string',
-		]);
+        ]);
+        
+		if ($validator->fails()) {
+           return response()->json(['Status' => 'Failed','Msg' => $validator->messages()->first()], 200);
+        }
 
         try {
 
@@ -184,7 +189,7 @@ class CarController extends Controller
     {
         try {
 
-            $car = CarDetails::where('user_id',Auth::user()->user_id)->get();
+            $car = CarDetails::where('user_id',Auth::user()->user_id)->where('status','!=','D')->get();
             
             return response()->json(['Status' => 'Success','Car' => $car], 201);
 
